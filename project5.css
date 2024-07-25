@@ -1,0 +1,425 @@
+.header{
+    background-color: #190482;
+    height: 625px;
+    width:100%;
+}
+.container1{
+    height: 625px;
+    width:50%;
+    float:left;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.container2{
+    height: 625px;
+    width:50%;
+    float:left;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+.main_heading{
+    color: azure;
+    font-size: 100px;
+    margin-top: 220px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    /* font-family: cursive; */
+    font-family: "Gill Sans", sans-serif;
+    /* font-family: system-ui; */
+}
+.para1{
+    font-size: 30px;
+    padding: 0 20px 0 20px;
+    margin:20px 20px 0 80px ;
+    color: bisque;
+
+}
+.image1{
+   height: 500px;
+   justify-content: center;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+/* ------------------section1------------------------- */
+.to_do {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    justify-content:right;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.to_do_quote{
+    float: left;
+    background-color: #C2D9FF;
+    /* height: 100vh; */
+    width: 50%;
+    margin-top: 50px;
+    padding: 20px; 
+    margin-left: 10%;
+}
+
+#todo-app {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 50px;
+    margin-right:10%;
+}
+
+#new-task-input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;    
+}
+#add-task-btn{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+}
+/* ------------------------List on quotes-------------------------------- */
+.list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 20px; /* Add some left padding for the custom bullets */
+}
+
+.list li {
+    position: relative; /* Position relative to place the pseudo-element */
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 20px; /* Add some space between list items */
+}
+
+.list li::before {
+    content: ''; /* Add empty content to create the bullet */
+    position: absolute; /* Position it absolutely */
+     /* Adjust the position of the bullet */
+     left: -20px;
+    top: 24px; /* Align it to the top */
+    width: 12px; /* Set the width of the square */
+    height: 12px; /* Set the height of the square */
+    background-color: black; /* Set the color of the square */
+}
+.text{
+    font-size: 30px;
+    color: brown;
+}
+/* --------------------------------------------------------------- */
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* border-right: #733838; */
+    /* box-sizing: border-box; */
+   /* word-break: break-all;
+    /* word-wrap: break-word; */
+    overflow-wrap: break-word;
+    margin-right: 18px;
+      display: grid;
+    grid-template-columns:auto 80px 90px;
+    gap: 5px;
+    padding: 10px;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #ccc;
+} 
+
+
+
+.task-list{
+    /* background-color: beige; */
+    background-color: whitesmoke;
+    color: black;
+    height: 390px;
+    /* scroll-behavior: auto; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    font-size: 14px;
+   }
+.design_del_btn{
+    background-color: red;
+    padding: 8px 8px;
+    color: white;
+    margin-right: 0%;
+    font-size: 12px;
+    border-radius: 16px;
+    border:1px solid red;
+    
+}
+.design_complete_btn{
+    background-color: green;
+    /* padding:12px 12px; */
+    padding:8px 8px;
+    color: white;
+   font-size: 12px;
+   border-radius: 16px;
+   border: 1px solid green;
+
+}
+.footer{
+    background-color: #190482;
+    color:whitesmoke;
+    height:70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: auto;
+}
+/* ///////////////////////////responsiveness///////////////////////// */
+@media only screen and (max-width: 1207px) {
+    .main_heading{
+        font-size: 60px;
+    }
+    .para1{
+        font-size:25px ;
+    }
+    .image1{
+        width: 400px;
+        height: auto;
+    }
+    .header{
+        height: 500px;
+    }
+    .to_do_quote{ 
+        overflow: hidden;
+    }
+}
+/* ======================================================== */
+
+@media only screen and (max-width: 1190px) {
+    .to_do{
+        margin-top: 0px;
+      width: 1167px;
+      justify-content: center;
+        }
+    .to_do_quote{
+        margin-left:auto;
+    }    
+   .container1{
+  height: 500px;
+   }
+   .container2{
+    height: 500px;
+   }
+  
+}
+@media only screen and (max-width: 1050px){
+    .to_do{
+        width:650px;
+       display: flex;
+       flex-direction: column;
+      height: 200vh;
+      margin-left:100px;
+      background-color: white;
+    
+    }
+    .to_do_quote{
+       
+       width: 650px;
+       margin-bottom: 0%;
+    }
+    #todo-app{
+        
+        width:650px;
+        
+    }
+    
+.text{
+    font-size: 25px;
+}
+.footer{
+    display: none;
+   }
+}
+/* =================================== */
+
+/* ========================================== */
+@media only screen and (max-width: 850px){
+.image1{
+    width: 320px;
+    height: 320px;
+}
+.main_heading{
+    font-size:40px ;
+    margin-top: 150px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+}
+.para1{
+    font-size: 25px;
+    margin-left:60px;
+}
+    .to_do{
+    width:500px;
+   display: flex;
+   flex-direction: column;
+  height: 200vh;
+  margin-left:30px;
+}
+.to_do_quote{
+   margin-left: 45px;
+   width: 500px;
+   margin-left:30px;
+}
+#todo-app{
+    margin-left: 45px;
+    width:500px;
+    margin-left:30px;
+}
+.text{
+    font-size: 30px;
+}
+#add-task-btn{
+    width: 94%;
+}
+.footer{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 677px){
+    .header{
+        height: 400px;
+    }
+    .container1{
+        height: 400px;
+    }
+    .container2{
+        height: 400px;
+    }
+    .image1{
+        width: 250px;
+        height: 250px;
+    }
+    .main_heading{
+        font-size:40px ;
+        margin-top: 100px;
+        margin-left: 70px;
+        margin-bottom: 20px;
+    }
+    .para1{
+        font-size: 16px;
+    }
+        .to_do{
+        width:500px;
+       display: flex;
+       flex-direction: column;
+      height: 200vh;
+      margin-bottom: 30px;
+      margin-left: 10px;
+    
+    }
+    .to_do_quote{
+       margin-left: 10px;
+       width: 500px;
+    }
+    #todo-app{
+        margin-left: 10px;
+        width: 500px;
+    
+    }
+    .text{
+        font-size: 25px;
+    }
+    #add-task-btn{
+        width: 94%;
+    }
+    .footer{
+        display: none;
+       }
+    
+}
+@media only screen and (max-width: 576px){
+    .header{
+        height: 350px;
+    }
+    .container1{
+        height: 350px;
+    }
+    .container2{
+        height:350px;
+    }
+    .image1{
+        width: 200px;
+        height: 200px;
+    }
+    .main_heading{
+        font-size:36px ;
+        margin-top: 100px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    }
+    .para1{
+        font-size: 14px;
+    }
+        .to_do{
+        width:400px;
+       display: flex;
+       flex-direction: column;
+      height: 200vh;
+     margin-left: 10px;
+    }
+    .to_do_quote{
+       margin-left: 10px;
+       width: 400px;
+    }
+    #todo-app{
+        margin-left: 10px;
+        width: 400px;
+    
+    }
+    .text{
+        font-size: 25px;
+    }
+    #add-task-btn{
+        width: 94%;
+    }
+    .footer{
+        display: none;
+       }
+}
+/* Medium Devices (Small Laptops) */
+/* @media (min-width: 769px) and (max-width: 992px) {
+     .column {
+        width: 33.33%;
+    }
+} */
+
+/* Small Devices (Tablets) */
+/* @media (min-width: 577px) and (max-width: 768px) {
+    .column {
+        width: 50%;
+    }
+} */
+
+/* Extra Small Devices (Phones) */
+/* @media (max-width: 576px) {
+    .column {
+        width: 100%;
+    }
+} */
+/* @media (orientation: landscape) { */
+    /* Styles for landscape orientation */
+/* } */
+/* @media (orientation: portrait) { */
+    /* Styles for portrait orientation */
+/* } */
